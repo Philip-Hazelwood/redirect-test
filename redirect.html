@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Redirect</title>
+</head>
+<body>
+    
+    <script>
+        if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            window.location.href = "https://apps.apple.com/us/app/my-daily-gravy/id6444932142";
+        } else if (/Android/i.test(navigator.userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.example.mydailygravy";
+        } else {
+            // If you want, you can insert two images (logos) here linked to App Store and Google Play for manual selection.
+            document.write("Please select the app store for your device: <br/>");
+            document.write("<a href='https://apps.apple.com/us/app/my-daily-gravy/id6444932142'>App Store</a><br/>");
+            document.write("<a href='https://play.google.com/store/apps/details?id=com.example.mydailygravy'>Google Play</a>");
+        }
+    </script>
+
+</body>
+</html>
